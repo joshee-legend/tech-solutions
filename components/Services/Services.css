@@ -1,0 +1,109 @@
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 40px 170px;
+}
+.services-title{
+    position: relative;
+}
+.services-title h1{
+    padding: 30px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.services-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+.services-format:hover{
+    border: 2px solid #ff00ff;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+.services-format h1{
+    font-size: 28px;
+    font-weight: 600;
+}
+.services-format h2{
+    font-size: 38px;
+    font-weight: 800;
+    background: linear-gradient(270deg, #df8908 50%, #b415ff 100%);
+    border-radius: 30px;
+    text-align: center;
+    
+}
+.services-format h2:hover{
+    transform: scale(1.22);
+    transition: 0.5s;
+}
+.services-format p{
+    color: #d4d4d4;
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 300px;
+}
+.services-format a{
+    list-style: none;
+    text-decoration: #b415ff;
+}
+@media(max-width:768px) {
+    .services{
+        display: flex;
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+        justify-content: space-between;
+    }
+    .services-title{
+        display: flex;
+        flex-direction: column;
+    }
+    .services-title h1{
+        font-size: 50px;
+        align-items: center;
+        text-align: center;
+   
+        padding: 0;
+
+    }
+    .services-format{
+        gap: 20px;
+        padding: 32px;
+    }
+    .services-format h2{
+        font-size: 28px;
+        width:100%;
+        align-items: center;
+        text-align: center;
+      
+       
+        background: linear-gradient(20deg, #df8908 50%, #b415ff 100%);
+    }
+    .services-format p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+    .services-container{
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 30px;
+    }
+}
